@@ -26,3 +26,9 @@ p {
     font-family: mainFont;
     text-shadow: 4px 4px black;
 }
+
+button {
+    font-family: mainFont;
+    text-align: center;
+    box-shadow: black 4px 4px;
+}

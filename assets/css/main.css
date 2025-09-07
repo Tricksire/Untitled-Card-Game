@@ -13,3 +13,9 @@ h1{
     font-family: mainFont;
     text-shadow: 4px 4px black;
 }
+
+img {
+    box-shadow: black 10px 10px;
+    position: relative;
+    left: 20px;
+}

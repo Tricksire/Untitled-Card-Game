@@ -9,7 +9,7 @@ body {
 
 h1{
     text-align: center;
-    color: azure;
+    color: lightgray;
     font-family: mainFont;
     text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000;
 }
@@ -25,7 +25,7 @@ p {
     width: 650px;
     word-wrap: break-word;
     text-align: center;
-    color: azure;
+    color: lightgray;
     font-family: mainFont;
 
     
@@ -37,9 +37,17 @@ button {
 }
 
 table, td, th {
-    color: azure;
+    color: lightgray;
     font-family: mainFont;
     border: 3px solid cornflowerblue;
     border-collapse: collapse;
     
+}
+
+.secondaryBgColour {
+    background-color: #151b23;
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }

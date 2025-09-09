@@ -4,7 +4,6 @@
         <title>Main Page</title>
         <link rel="icon" type="image/x-icon" href="assets/images/waluigiCompressed.gif">
 		<link rel="stylesheet" href="assets/css/main.css">
-
     </head>
 
 	<body>
@@ -15,23 +14,30 @@
 
 		<img class="center" alt="dog" src="assets/images/img1.jpeg">
 
-		<p class="center">
+		<p class="center" id="text1">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit, quam sed maximus vestibulum, diam tellus sagittis magna, ut bibendum erat est sed diam. Nulla ut dolor massa. Suspendisse placerat non nulla eget bibendum. Aliquam dictum dolor id volutpat semper. Praesent tristique, massa eget tincidunt lobortis, dui justo finibus justo,
 		</p>
 
+		<input class="center" type="color" id="colorPicker1">
+
 		<img class="center" alt="dog2" src="assets/images/img2.jpeg">
 
-		<p class="center">
+		<p class="center" id="text2" vaule="#f0ffff" >
 			ac eleifend arcu tortor sed dolor. Phasellus lorem mi, tincidunt et aliquet id, luctus ut massa. Praesent feugiat, dui non porta finibus, felis nulla dapibus odio, vitae dictum ipsum tortor vel dolor. Nulla in convallis elit. 
 		</p>
 
+		<input class="center" type="color" id="colorPicker2" value="#f0ffff">
+
 		<img class="center" alt="dog3" src="assets/images/img3.jpeg">
 
-		<p class="center">
+		<p class="center" id="text3">
 			Phasellus bibendum ornare dolor at rutrum. Nulla auctor sit amet ipsum non maximus. Pellentesque ultrices auctor tellus, sit amet rhoncus sem placerat sit amet. Suspendisse sit amet congue nisl. Morbi ut metus eu nulla dignissim finibus lobortis vel diam.
 		</p>
-		
-         <button>Lorem ipsum</button>
+
+		<input class="center" type="color" id="colorPicker3" vaLue="#f0ffff">
+
+         <button class="center" onclick="alertFunction()">Pop up dialogue</button>
+		 <button class="center" onclick="confirmFunction()">Confirmation button</button>
 			
 		<table style="width:100%">
   			<tr>
@@ -57,6 +63,6 @@
 
 
 		 </table>
-
+	<script src="assets/js/main.js"></script>
 	</body>
 </html>

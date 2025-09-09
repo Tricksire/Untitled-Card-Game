@@ -31,11 +31,9 @@ p {
     
 }
 
-
 button {
     font-family: mainFont;
     text-align: center;
-    box-shadow: black 4px 4px;
 }
 
 table, td, th {

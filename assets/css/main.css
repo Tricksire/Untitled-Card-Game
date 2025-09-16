@@ -1,53 +1,81 @@
-@font-face {
-font-family: mainFont;
-src: url(../fonts/mainFont.otf);
-}
-
 body {
     background-color: #212830;
+    display: flex;
+    margin: 0;
 }
 
-h1{
+.secondaryBgColour {
+    background-color: #151b23;
+    position: relative;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(../fonts/mainFont.otf);
+}
+
+h1 {
     text-align: center;
     color: lightgray;
     font-family: mainFont;
     text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000;
 }
 
-.center{
+p {
+    width: 650px;
+    word-wrap: break-word;
+    text-align: left;
+    color: lightgray;
+    font-family: mainFont;
+}
+
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin: 0 auto;
 }
 
-p {
-    width: 650px;
-    word-wrap: break-word;
-    text-align: center;
-    color: lightgray;
-    font-family: mainFont;
-
-    
-}
-
 button {
     font-family: mainFont;
     text-align: center;
+    border: 2px solid cornflowerblue;
+    border-radius: 7px;
+    background-color: #151b23;
+    color: lightgray;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    float: inline-start;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
-table, td, th {
+.inputMargin {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+table,
+td,
+th {
     color: lightgray;
     font-family: mainFont;
     border: 3px solid cornflowerblue;
     border-collapse: collapse;
-    
 }
 
-.secondaryBgColour {
+.tableInput {
     background-color: #151b23;
-    position: relative;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    color: lightgrey;
+    border: none;
+    padding: 12px;
+    text-align: center;
 }

@@ -1,3 +1,14 @@
+html {
+    font-family: mainFont;
+    color: lightgray;
+    text-align: center;
+}
+
+input,
+button {
+    font-family: mainFont;
+}
+
 body {
     background-color: #212830;
     display: flex;
@@ -17,18 +28,8 @@ body {
     src: url(../fonts/mainFont.otf);
 }
 
-h1 {
-    text-align: center;
-    color: lightgray;
-    font-family: mainFont;
-}
-
 p {
     width: 650px;
-    word-wrap: break-word;
-    text-align: left;
-    color: lightgray;
-    font-family: mainFont;
     padding: 12px;
     border: 1px solid cornflowerblue;
     border-radius: 6px;
@@ -40,13 +41,14 @@ p {
     margin-right: auto;
 }
 
-input[type=text] {
+.textBox {
+    margin-top: 15px;
+    margin-bottom: 15px;
     outline: none;
     border: 3px solid #555;
     transition: 0.5s;
     padding: 8px;
     color: darkgray;
-    font-family: mainFont;
     background-color: #212830;
 
 }
@@ -74,9 +76,7 @@ input[type=color] {
     font-style: italic;
 }
 
-
 button {
-    font-family: mainFont;
     text-align: center;
     border: 2px solid cornflowerblue;
     border-radius: 7px;
@@ -88,6 +88,11 @@ button {
     padding: 15px;
     width: 250px;
 
+}
+
+button:hover {
+    background-color: cornflowerblue;
+    color: white;
 }
 
 .tableInput {

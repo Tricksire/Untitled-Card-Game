@@ -13,19 +13,16 @@ function newRow() {
         getElementsByTagName('tbody')[0];
     const newRow = table.insertRow();
 
-    const cell1 = newRow.insertCell(0);
-    const cell2 = newRow.insertCell(1);
+    const numberOfCells = 2
+    for (let i = 0; i < numberOfCells; i++) {
+        const cell = newRow.insertCell(i);
 
-    const textarea1 = document.createElement("textarea");
-    textarea1.placeholder = "Table data"
-    textarea1.maxLength = 20
+        const textarea = document.createElement("textarea");
+        textarea.placeholder = "Table data"
+        textarea.maxLength = 20
 
-    const textarea2 = document.createElement("textarea")
-    textarea2.placeholder = "Table data"
-    textarea2.maxLength = 20
-
-    cell1.appendChild(textarea1);
-    cell2.appendChild(textarea2);
+        cell.appendChild(textarea)
+    }
 }
 // Creates color input for each paragraph
 const paragraph = document.getElementsByTagName("p")

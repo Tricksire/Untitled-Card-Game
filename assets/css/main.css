@@ -7,8 +7,15 @@ textarea {
     text-align: center;
 }
 
+input[type=text],
+textarea,
+button,
+table,
 body {
     background-color: #212830;
+}
+
+body {
     display: flex;
     margin: 0;
 }
@@ -43,18 +50,15 @@ p {
     margin-bottom: 8px;
 }
 
-
 input[type=text] {
     border: 3px solid #555;
     outline: none;
-    background-color: #212830;
     transition: 0.5s;
     padding: 10px 10px 10px 10px;
 }
 
 input[type=text]:focus {
     border: 3px solid #ccc;
-    outline: none;
 }
 
 input[type=color] {
@@ -67,20 +71,16 @@ input[type=color] {
 ::-webkit-input-placeholder {
     font-style: italic;
 }
-
 ::-moz-placeholder {
     font-style: italic;
 }
-
 :-ms-input-placeholder {
     font-style: italic;
 }
 
 button {
-    margin: auto !important;
     border: 2px solid cornflowerblue;
     border-radius: 7px;
-    background-color: #151b23;
     transition-duration: 0.3s;
     cursor: pointer;
     float: inline-start;
@@ -91,20 +91,17 @@ button {
 
 button:hover {
     background-color: cornflowerblue;
-    color: white;
 }
 
 table,
 th,
 td {
-    background-color: #212830;
     border: 2px solid cornflowerblue;
     border-collapse: collapse;
     width: 50%;
 }
 
 textarea {
-    background-color: #212830;
     resize: none;
     outline: none;
     border: none;

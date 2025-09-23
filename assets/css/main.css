@@ -1,12 +1,10 @@
-html {
+html,
+input[type=text],
+button,
+textarea {
     font-family: mainFont;
     color: lightgray;
     text-align: center;
-}
-
-input,
-button {
-    font-family: mainFont;
 }
 
 body {
@@ -15,12 +13,11 @@ body {
     margin: 0;
 }
 
-.secondaryBgColour {
+.mainColumn {
     background-color: #151b23;
-    position: relative;
     width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 @font-face {
@@ -31,30 +28,33 @@ body {
 p {
     width: 650px;
     padding: 12px;
-    border: 1px solid cornflowerblue;
+    border: 3px solid cornflowerblue;
     border-radius: 6px;
+    text-align: left;
 }
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
-.textBox {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    outline: none;
-    border: 3px solid #555;
-    transition: 0.5s;
-    padding: 8px;
-    color: darkgray;
-    background-color: #212830;
+.margin {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 
+
+input[type=text] {
+    border: 3px solid #555;
+    outline: none;
+    background-color: #212830;
+    transition: 0.5s;
+    padding: 10px 10px 10px 10px;
 }
 
 input[type=text]:focus {
-    border: 3px solid #ccc
+    border: 3px solid #ccc;
+    outline: none;
 }
 
 input[type=color] {
@@ -77,11 +77,10 @@ input[type=color] {
 }
 
 button {
-    text-align: center;
+    margin: auto !important;
     border: 2px solid cornflowerblue;
     border-radius: 7px;
     background-color: #151b23;
-    color: lightgray;
     transition-duration: 0.3s;
     cursor: pointer;
     float: inline-start;
@@ -97,8 +96,22 @@ button:hover {
 
 .tableInput {
     background-color: #151b23;
-    color: lightgrey;
     border: none;
-    padding: 12px;
-    text-align: center;
+    text-wrap: pretty;
+    width: 75%;
+}
+
+table,
+th,
+td {
+    background-color: #212830;
+    border: 2px solid cornflowerblue;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+textarea {
+    background-color: #212830 !important;
+    resize: none;
+    outline: none;
 }

@@ -22,16 +22,12 @@ const paragraph = document.getElementsByTagName("p")
 const numberOfPara = paragraph.length
 for (let i = 0; i < numberOfPara; i++) {
     const input = document.createElement("input")
-    input.type = "color"
-    input.autocomplete = "off"
-    input.value = "#D3D3D3"
-    input.id = "colorPicker" + i.toString()
+    input.type = "color", input.value = "#D3D3D3", input.autocomplete = "off", input.class = "center", input.id = "colorPicker" + i.toString()
 
     paragraph[i].insertAdjacentElement("afterend", input);
 }
 
 // Sets the paragraph text color based on the input
-
 document.getElementById('colorPicker0').addEventListener('input', function () {
     document.getElementById('text0').style.color = this.value;
 })

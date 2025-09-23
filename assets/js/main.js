@@ -12,10 +12,20 @@ function newRow() {
     const table = document.getElementById("table").
         getElementsByTagName('tbody')[0];
     const newRow = table.insertRow();
+
     const cell1 = newRow.insertCell(0);
     const cell2 = newRow.insertCell(1);
-    cell1.innerHTML = "test";
-    cell2.innerHTML = "test";
+
+    const textarea1 = document.createElement("textarea");
+    textarea1.placeholder = "Table data"
+    textarea1.maxLength = 20
+
+    const textarea2 = document.createElement("textarea")
+    textarea2.placeholder = "Table data"
+    textarea2.maxLength = 20
+
+    cell1.appendChild(textarea1);
+    cell2.appendChild(textarea2);
 }
 // Creates color input for each paragraph
 const paragraph = document.getElementsByTagName("p")
